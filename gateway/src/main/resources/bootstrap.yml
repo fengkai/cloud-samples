@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: nacos-config-example
+    cloud:
+        nacos:
+            config:
+                extension-configs:
+                    -   data-id: extension1.properties
+                        refresh: true
+                    -   data-id: test1.yml
+                        refresh: true
+                server-addr: 127.0.0.1:8848
+                shared-configs:
+                    -   data-id: test2.yaml
+                        group: GROUP_APP1
+                        refresh: true
+            password: nacos
+            username: nacos

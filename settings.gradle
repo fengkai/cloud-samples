@@ -1,0 +1,5 @@
+rootProject.name = 'cloud-samples'
+include 'gateway'
+include 'nacos-service-provider'
+include 'nacos-service-consumer'
+
