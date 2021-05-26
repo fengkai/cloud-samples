@@ -17,7 +17,7 @@ allprojects{
 	group = 'com.example'
 
 	apply plugin: "io.spring.dependency-management"
-	apply plugin: 'checkstyle'
+//	apply plugin: 'checkstyle'
 
 	dependencyManagement {
 		imports {

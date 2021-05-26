@@ -1,0 +1,1 @@
+Nothing to do with cloud. Just for SPI tests.
