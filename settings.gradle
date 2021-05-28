@@ -1,11 +1,15 @@
 rootProject.name = 'cloud-samples'
-include 'gateway'
-include 'nacos-service-provider'
-include 'nacos-service-consumer'
+include 'spring-cloud:gateway'
+include 'spring-cloud:nacos-service-provider'
+include 'spring-cloud:nacos-service-consumer'
 //include 'what-is-spi'
-include 'seata'
-include "what-is-spi:api"
-include "what-is-spi:provider"
-include "what-is-spi:app"
-include 'classloader'
-
+include 'spring-cloud:seata'
+include "spring-cloud:what-is-spi:api"
+include "spring-cloud:what-is-spi:provider"
+include "spring-cloud:what-is-spi:app"
+include 'spring-cloud:classloader'
+include 'spring-cloud:bean-lifecycle'
+include 'dubbo:api:common-api'
+include 'dubbo:api:consumer'
+include 'dubbo:api:provider'
+include 'dubbo:annotation'

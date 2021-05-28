@@ -1,0 +1,9 @@
+plugins {
+}
+
+dependencies {
+    implementation(project(":dubbo:api:common-api"))
+    implementation 'org.apache.dubbo:dubbo'
+    implementation 'org.apache.dubbo:dubbo-dependencies-zookeeper'
+    testImplementation 'junit:junit:4.12'
+}

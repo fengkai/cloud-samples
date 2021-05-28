@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    implementation(project(":spring-cloud:what-is-spi:api"))
+    implementation(project(":spring-cloud:what-is-spi:provider"))
+    implementation("mysql:mysql-connector-java")
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}

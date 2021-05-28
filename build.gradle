@@ -18,15 +18,7 @@ allprojects{
 
 	apply plugin: "io.spring.dependency-management"
 //	apply plugin: 'checkstyle'
-
-	dependencyManagement {
-		imports {
-			mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
-			mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-			mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:2021.1"
-		}
-	}
-
+//
 	repositories {
 		maven{  url "https://maven.aliyun.com/nexus/content/groups/public"}
 		mavenCentral()
@@ -34,17 +26,6 @@ allprojects{
 
 }
 
-subprojects{
-	apply plugin: "java"
-
-	dependencies{
-		testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	}
-
-	test {
-		useJUnitPlatform()
-	}
-}
 
 
 

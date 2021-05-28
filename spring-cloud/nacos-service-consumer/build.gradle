@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:2021.1"
+    }
+}
+
+dependencies {
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery"
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer'
+}
